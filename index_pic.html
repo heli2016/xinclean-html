@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>兼职平台</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/theme.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+<script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+ function isChecked(Obj){
+	 if($(Obj).find("input[type=checkbox]").is(':checked')){
+	   $(Obj).find("input[type=checkbox]").prop("checked",false);
+	   $(Obj).css("background-color","white");  
+	 }else{
+		 $(Obj).find("input[type=checkbox]").prop("checked",true);
+		 $(Obj).css("background-color","#99cccc");  
+	 }
+ }
+ 
+</script>
+<script>
+function menuSH(){
+	if($('.sidebar-nav').css('display')=='none'){
+		$('.sidebar-nav').css('display','block');
+		}else{
+			$('.sidebar-nav').css('display','none');
+		}
+	
+}
+</script>
+</head>
+
+<body>
+<header>
+<div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <p>
+丁来福，欢迎使用审核后台！
+<a id="curAccountName" href="javascript:void(doLogon())"></a>
+<a href="index.html">返回首页</a>
+|<a href="javascript:void(doChangePwd())">修改密码</a>
+|
+<a href="javascript:void(doLogout())">退出系统</a>
+</p>
+                <a class="brand" href="/admin/"> <span class="second">兼职工作平台</span></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="container-fluid">
+<div class="m-head">
+<div class="m-wel">欢迎,丁来福</div>
+<div class="m-mune" onclick="menuSH()">菜单</div>
+</div>
+    <div class="row-fluid">
+        <div class="span3">
+            <script src="js/jquery.url.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    Array.prototype.in_array = function(e)
+    {
+        for(i=0;i<this.length;i++)
+        {
+            if(this[i] == e)
+            return true;
+        }
+        return false;
+    }
+    $(function () {
+        window.console && console.log(window.location.href);
+        window.console && console.log(window.location.host);
+        window.console && console.log(jQuery.url.segment(0));
+        window.console && console.log($.url.segment(1) == "null");
+        $(".nav-list").removeClass('in');
+        //alert($.url.segment(1)) ;
+        var question_menu = ["youyuan","youyuanshai"] ;
+        var select_menu = ["select","status","socket","setting","mode"] ;
+        if(question_menu.in_array($.url.segment(1))){
+            $("#youyuan-menu").addClass("in");
+        }
+        if(select_menu.in_array($.url.segment(1))){
+            $("#select-menu").addClass("in");
+        }
+        if(!$.url.segment(1)){
+            $("#dashboard-menu").addClass("in");
+        }
+
+    });
+</script>
+<div class="sidebar-nav">
+    <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu">我的任务</div>
+    <ul id="dashboard-menu" class="nav nav-list collapse">
+        <li><a href="index_touxiang.html">任务编号-头像（4376）</a></li>
+        <li><a href="index_wenzi.html">任务编号-文字（62746）</a></li>
+        <li><a href="index_yinpin.html">任务编号-音频（6376）</a></li>
+        <li><a href="index_shipin.html">任务编号-视频（976）</a></li>
+        <li><a href="index_wenzi.html">任务编号-文字（436）</a></li>
+        <li><a href="index_pic.html">任务编号-图片（41886）</a></li>
+
+
+    </ul>
+
+
+    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">工作报表
+    </div>
+    <ul id="youyuan-menu" class="nav nav-list collapse">
+        
+            <li><a href="/admin/youyuan">工作量报表</a></li>
+    </ul>
+    
+    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">资产
+    </div>
+    <ul id="youyuan-menu" class="nav nav-list collapse">
+        
+            <li><a href="/admin/youyuan">资产</a></li>
+    </ul>
+    
+    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">组织
+    </div>
+    <ul id="youyuan-menu" class="nav nav-list collapse">
+        
+            <li><a href="/admin/youyuan">组织</a></li>
+    </ul>
+    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">个人信息
+    </div>
+    <ul id="youyuan-menu" class="nav nav-list collapse">
+        
+            <li><a href="/admin/youyuan">个人信息</a></li>
+    </ul>
+
+
+
+</div>
+        </div>
+        <div class="span9">
+<div class="panel datagrid">
+        <div class="panel-header">
+        <div class="panel-title">列表</div>
+        </div>
+<div class="datagrid-wrap panel-body" title="">
+<div id="toolbars" class="datagrid-toolbar">
+<font color="red"> 默认通过，勾选不通过</font>
+<select class="pagination-page-list">
+<option>10</option>
+<option>20</option>
+<option>30</option>
+<option>40</option>
+<option>50</option>
+</select>
+<a class="l-btn" href="#" style="float: right;">
+<span class="l-btn-left">
+<span class="l-btn-text">审核规则</span>
+</span>
+</a>
+</div>
+</div>
+<div class="datagrid-view">
+<table border="1">
+<thead>
+<tr class="wenzi-height">
+<td class="rownumber">序号</td>
+<td class="datagrid-header-check">
+<input type="checkbox">
+</td>
+<td class="datagrid-cell-pic">图片</td>
+</tr>
+</thead>
+<tbody>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">1</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell" style=";text-align:center;;height:auto;">
+<div class="datagrid-cell-text">度假胜地跨境梵蒂冈反倒是电商说度假胜地跨境电商说的 就度假胜地跨境电商说的 就度假胜地跨境电商说的 就度假胜地跨境电商说的 就的 就是打尽</div>
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">2</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">3</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<div class="datagrid-cell-picmax">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">4</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">5</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">6</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">7</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">8</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">9</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+<tr class="pic-height" onClick="isChecked(this)">
+<td class="rownumber">10</td>
+<td class="datagrid-cell-check">
+<input name="guid" value="794567" type="checkbox">
+</td>
+<td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</div></td>
+</tr>
+</tbody>
+</table>
+
+</div>        
+        </div>
+<div style="margin-top:30px;">
+<a id="push_logout_youyuan" class="btn" href="javascript:;" style="width:15%;height:50px;text-align:center;background-color:#99f">提交并退出</a>
+<a id="push_youyuan" class="btn" href="javascript:;" style="width:65%; margin-left:5%;height:50px;text-align:center;background-color:#39f">提交</a>
+</div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.js"></script>
+<footer>
+
+</footer>
+</body>
+</html>
