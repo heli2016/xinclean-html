@@ -247,3 +247,28 @@ a:hover.l-btn-plain-selected {
 	.m-mune:hover{cursor:pointer;}
 	.span9{margin-top:20px;}
 	}
+
+
+.dateinput{padding:6px;border:1px solid #d3d3d3}
+.baobiaotop{background:#333; color:#FFF;}
+
+.zichan{width:90%;}
+.zichan ul {
+    font-size: 14px;
+    line-height: 23px;
+}
+.zichan li {
+    padding: 10px 0;
+}
+.zichan li a{margin-left:20px;}
+.zichan li span.is-t {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+    width: 150px;
+}
+#tixian{display:none; padding-left:80px;}
+#dongjiedesc{display:none; padding-left:80px;}
+.zichan form{ margin-top:10px;}
+.zichan input{border:1px #000 solid;}
+.ml20{margin-left:20px;}

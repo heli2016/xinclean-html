@@ -72,42 +72,11 @@ function menuSH(){
 </div>
     <div class="row-fluid">
         <div class="span3">
-            <script src="js/jquery.url.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    Array.prototype.in_array = function(e)
-    {
-        for(i=0;i<this.length;i++)
-        {
-            if(this[i] == e)
-            return true;
-        }
-        return false;
-    }
-    $(function () {
-        window.console && console.log(window.location.href);
-        window.console && console.log(window.location.host);
-        window.console && console.log(jQuery.url.segment(0));
-        window.console && console.log($.url.segment(1) == "null");
-        $(".nav-list").removeClass('in');
-        //alert($.url.segment(1)) ;
-        var question_menu = ["youyuan","youyuanshai"] ;
-        var select_menu = ["select","status","socket","setting","mode"] ;
-        if(question_menu.in_array($.url.segment(1))){
-            $("#youyuan-menu").addClass("in");
-        }
-        if(select_menu.in_array($.url.segment(1))){
-            $("#select-menu").addClass("in");
-        }
-        if(!$.url.segment(1)){
-            $("#dashboard-menu").addClass("in");
-        }
 
-    });
-</script>
 <div class="sidebar-nav">
-    <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu">我的任务</div>
-    <ul id="dashboard-menu" class="nav nav-list collapse">
+    <div class="nav-header" data-toggle="collapse" data-target="#program-menu">我的任务</div>
+    <ul id="program-menu" class="nav nav-list collapse">
         <li><a href="index_touxiang.html">任务编号-头像（4376）</a></li>
         <li><a href="index_wenzi.html">任务编号-文字（62746）</a></li>
         <li><a href="index_yinpin.html">任务编号-音频（6376）</a></li>
@@ -119,31 +88,31 @@ function menuSH(){
     </ul>
 
 
-    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">工作报表
+    <div class="nav-header" data-toggle="collapse" data-target="#baobiao-menu">工作报表
     </div>
-    <ul id="youyuan-menu" class="nav nav-list collapse">
+    <ul id="baobiao-menu" class="nav nav-list collapse">
         
-            <li><a href="/admin/youyuan">工作量报表</a></li>
+            <li><a href="index_baobiao.html">工作量报表</a></li>
     </ul>
     
-    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">资产
+    <div class="nav-header" data-toggle="collapse" data-target="#zichan-menu">资产
     </div>
-    <ul id="youyuan-menu" class="nav nav-list collapse">
+    <ul id="zichan-menu" class="nav nav-list collapse">
         
-            <li><a href="/admin/youyuan">资产</a></li>
+            <li><a href="index_zichan.html">资产</a></li>
     </ul>
     
-    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">组织
+    <div class="nav-header" data-toggle="collapse" data-target="#zuzhi-menu">组织
     </div>
-    <ul id="youyuan-menu" class="nav nav-list collapse">
+    <ul id="zuzhi-menu" class="nav nav-list collapse">
         
-            <li><a href="/admin/youyuan">组织</a></li>
+            <li><a href="index_zuzhi.html">组织</a></li>
     </ul>
-    <div class="nav-header" data-toggle="collapse" data-target="#youyuan-menu">个人信息
+    <div class="nav-header" data-toggle="collapse" data-target="#geren-menu">个人信息
     </div>
-    <ul id="youyuan-menu" class="nav nav-list collapse">
+    <ul id="geren-menu" class="nav nav-list collapse">
         
-            <li><a href="/admin/youyuan">个人信息</a></li>
+            <li><a href="index_geren.html">个人信息</a></li>
     </ul>
 
 
