@@ -272,10 +272,27 @@ a:hover.l-btn-plain-selected {
 .zichan form{ margin-top:10px;}
 .zichan input{border:1px #000 solid;}
 .ml20{margin-left:20px;}
+.zuzhi{background:#ffffff; float:left;}
+.zuzhi .top{ width:100%; height:30px; line-height:30px; background:#ccc; font-size:18px; float:left; margin-top:20px;}
+.zuzhi .top span{margin-left:5%;}
+.zuzhi .bottom{width:90%;}
+.zuzhi .bottom ul {
+}
+.zuzhi .bottom li {
+	width:150px;
+	height:50px;
+	margin-left:5%;
+	margin-top:10px;
+	float:left;
+	font-size:16px;
+	padding:0;
+}
+.send{float:right; margin-right:10px;}
 
+.sendto{margin-left:5%; }
+.sendto span{height:30px; line-height:30px;}
+.sendto input[type="checkbox"]{ margin:0; padding:0; margin-left:10px;}
 
-/*大图 start*/
+.sendmessbox{width:100%; margin:0 auto; text-align:center;}
+#txtcontent{width:90%; margin-top:20px; height:200px;}
 
-#bigimage { position:absolute; display:none; }
-#bigimage img { width:400px; height:400px; padding:5px; background:#fff; border:1px solid #e3e3e3; }
-/*大图 end*/
