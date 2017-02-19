@@ -10,16 +10,7 @@
 <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/theme.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/audioplayer.css" />
-
 <script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
-		<script>
-			/*
-				VIEWPORT BUG FIX
-				iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
-			*/
-			(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
-		</script>
 <script>
 function menuSH(){
 	if($('.sidebar-nav').css('display')=='none'){
@@ -31,6 +22,7 @@ function menuSH(){
 }
 </script>
 </head>
+
 <body>
 <header>
 <div class="navbar">
@@ -58,7 +50,6 @@ function menuSH(){
 <div class="m-mune" onclick="menuSH()">菜单</div>
 </div>
     <div class="row-fluid">
-    
         <div class="span3">
 
 
@@ -109,30 +100,34 @@ function menuSH(){
         </div>
         <div class="span9">
 
-<div class="shipinbox">
-<div class="vitem">
-<a class="l-btn" href="shenheguize.html" style="float: right;">
-<span class="l-btn-left">
-<span class="l-btn-text">审核规则</span>
-</span>
-</a>
-<h4>音频描述：</h4>
-<span>说的放跨境电商色的放跨境电商色共同讽德诵功但是gadfly 收的放跨境电商色共同讽德诵功但是gadfly 收的放跨境电商色共同讽德诵功但是gadfly 收的放跨境电商色共同讽德诵功但是gadfly 收共同讽德诵功但是gadfly 收到罚单是</span>
-</div>
-<div class="musicbox0">
-<audio preload="auto" controls>
-				<source src="audio/BlueDucks_FourFlossFiveSix.mp3">
-			</audio>
-			<script src="js/jquery.js"></script>
-			<script src="js/audioplayer.js"></script>
-			<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
-</div>
 
-</div>
-<div style="margin-top:30px;">
-<a id="push_logout_youyuan" class="btn" href="javascript:;" style="width:40%;height:50px;text-align:center;background-color:#99f">不通过</a>
-<a id="push_youyuan" class="btn" href="javascript:;" style="width:40%; margin-left:5%;height:50px;text-align:center;background-color:#39f">通过</a>
-</div>
+           
+
+            <div class="row-fluid">
+                <div class="block">
+                  <div class="title">
+   <h2>XXXX项目审核规则</h2>
+  </div>
+                  <div class="content">
+   <table width='90%'>
+    <tr>
+     <td>
+     <!-- 下面调取后台建立项目 使用编辑器编辑的规则 字段  -->
+<p>1.色情、暴力、反动、粗俗等违规违法内容不通过</p>
+<p>2.暴露个人信息如QQ微信号不通过</p>
+<p>3.名人姓名不通过</p>
+<p>4.诋毁本站的内容不通过</p>
+<p>5.符号、非文字不通过</p>
+<p>6.其他影响用户心情或观赏的情况不通过</p>
+<p>7.内容与话题相符（昵称和群发除外），否则不通过</p>
+
+      </td>
+    </tr>
+   </table>
+  </div>
+
+                </div>
+            </div>
 
 
         </div>
