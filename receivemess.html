@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>兼职平台</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/theme.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+<script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script>
+function menuSH(){
+	if($('.sidebar-nav').css('display')=='none'){
+		$('.sidebar-nav').css('display','block');
+		}else{
+			$('.sidebar-nav').css('display','none');
+		}
+	
+}
+</script>
+<script type="text/javascript">
+        $(function() {
+           $("#sendtoall").click(function() {
+                $('input[name="sendto_list"]').attr("checked",this.checked); 
+            });
+            var $subBox = $("input[name='sendto_list']");
+            $subBox.click(function(){
+                $("#chesendtoallckAll").attr("checked",$subBox.length == $("input[name='sendto_list']:checked").length ? true : false);
+            });
+        });
+    </script>
+</head>
+
+<body>
+<header>
+<div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <p>
+丁来福，欢迎使用审核后台！
+<a id="curAccountName" href="javascript:void(doLogon())"></a>
+<a href="index.html">返回首页</a>
+|<a href="javascript:void(doChangePwd())">修改密码</a>
+|
+<a href="javascript:void(doLogout())">退出系统</a>
+</p>
+                <a class="brand" href="/admin/"> <span class="second">兼职工作平台</span></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<div class="container-fluid">
+<div class="m-head">
+<div class="m-wel">欢迎,丁来福</div>
+<div class="m-mune" onclick="menuSH()">菜单</div>
+</div>
+    <div class="row-fluid">
+        <div class="span3">
+
+
+<div class="sidebar-nav">
+    <div class="nav-header" data-toggle="collapse" data-target="#program-menu">我的任务</div>
+    <ul id="program-menu" class="nav nav-list collapse">
+        <li><a href="index_touxiang.html">任务编号-头像（4376）</a></li>
+        <li><a href="index_wenzi.html">任务编号-文字（62746）</a></li>
+        <li><a href="index_yinpin.html">任务编号-音频（6376）</a></li>
+        <li><a href="index_shipin.html">任务编号-视频（976）</a></li>
+        <li><a href="index_wenzi.html">任务编号-文字（436）</a></li>
+        <li><a href="index_pic.html">任务编号-图片（41886）</a></li>
+
+
+    </ul>
+
+
+    <div class="nav-header" data-toggle="collapse" data-target="#baobiao-menu">工作报表
+    </div>
+    <ul id="baobiao-menu" class="nav nav-list collapse">
+        
+            <li><a href="index_baobiao.html">工作量报表</a></li>
+    </ul>
+    
+    <div class="nav-header" data-toggle="collapse" data-target="#zichan-menu">资产
+    </div>
+    <ul id="zichan-menu" class="nav nav-list collapse">
+        
+            <li><a href="index_zichan.html">资产</a></li>
+    </ul>
+    
+    <div class="nav-header" data-toggle="collapse" data-target="#zuzhi-menu">组织
+    </div>
+    <ul id="zuzhi-menu" class="nav nav-list collapse">
+        
+            <li><a href="index_zuzhi.html">组织</a></li>
+    </ul>
+    <div class="nav-header" data-toggle="collapse" data-target="#geren-menu">个人信息<span class="xiaoxinum"><a href="receivemess.html">消息（<b class="red">1</b>）</a></span>
+    </div>
+    <ul id="geren-menu" class="nav nav-list collapse">
+        
+            <li><a href="index_geren.html">个人信息</a></li>
+            <li><a href="receivemess.html">我的留言</a></li>
+    </ul>
+
+
+
+</div>
+        </div>
+        <div class="span9">
+
+
+           
+
+            <div class="row-fluid">
+                <div class="block">
+<div class="list-message">
+<div class="listi">
+<div class="infomes">
+小提示：
+<a class="grow" href="/Privacy/Action.php"></a>
+
+</div>
+</div>
+<ul class="list-box">
+<li>
+<a class="del-msg" href="javascript:void(0);" onclick="deleteAllConfirm(2376516,5)">删除信息</a>
+<span class="chk-area">
+<input class="ckb" onclick="ckSelectedChange(this);" name="chk_msg" value="2376516" type="checkbox">
+</span>
+<div class="msg-box">
+<a href="" target="_blank">
+<img class="msg-photo" src="http://qidian.qpic.cn/qd_face/349573/3868594/" alt="" width="50" height="50">
+</a>
+<div class="msg-body">
+<div class="msg-from">
+<a href="" target="_blank">我</a>
+发给
+<a href="">点点</a>
+</div>
+<div class="msg-new">skj和违法第三方电脑上的 都市客积就是地服就是地服不是的 金黄色的范 几乎是待发货sad 局核实对方九十点分第三方电脑付款  色空间发的发几个都是 聚合度覅赛接发空间被第三方 的安迪发 金卡是疯了加放</div>
+</div>
+<div class="time">
+2017-01-10 09:46 |
+<a class="grow" href="sendmessage.html?id=237651">回复</a>
+</div>
+</div>
+</li>
+<li>
+<a class="del-msg" href="javascript:void(0);" onclick="deleteAllConfirm(2376516,5)">删除信息</a>
+<span class="chk-area">
+<input class="ckb" onclick="ckSelectedChange(this);" name="chk_msg" value="2376516" type="checkbox">
+</span>
+<div class="msg-box">
+<a href="" target="_blank">
+<img class="msg-photo" src="http://qidian.qpic.cn/qd_face/349573/3868594/" alt="" width="50" height="50">
+</a>
+<div class="msg-body">
+<div class="msg-from">
+<a href="" target="_blank">小鱼儿</a>
+发给
+<a href="">我</a>
+</div>
+<div class="msg-txt">skj和违法第三方电脑上的 都市客积就是地服就是地服不是的 金黄色的范 几乎是待发货sad 局核实对方九十点分第三方电脑付款  色空间发的发几个都是 聚合度覅赛接发空间被第三方 的安迪发 金卡是疯了加放</div>
+</div>
+<div class="time">
+2017-01-10 09:46 |
+<a class="grow" href="sendmessage.html?id=237651">回复</a>
+</div>
+</div>
+</li>
+<li>
+<a class="del-msg" href="javascript:void(0);" onclick="deleteAllConfirm(2376516,5)">删除信息</a>
+<span class="chk-area">
+<input class="ckb" onclick="ckSelectedChange(this);" name="chk_msg" value="2376516" type="checkbox">
+</span>
+<div class="msg-box">
+<a href="" target="_blank">
+<img class="msg-photo" src="http://qidian.qpic.cn/qd_face/349573/3868594/" alt="" width="50" height="50">
+</a>
+<div class="msg-body">
+<div class="msg-from">
+<a href="" target="_blank">我</a>
+发给
+<a href="">frank</a>
+</div>
+<div class="msg-txt">skj和违法第三方电脑上的 都市客积就是地服就是地服不是的 金黄色的范 几乎是待发货sad 局核实对方九十点分第三方电脑付款  色空间发的发几个都是 聚合度覅赛接发空间被第三方 的安迪发 金卡是疯了加放</div>
+</div>
+<div class="time">
+2017-01-10 09:46 |
+<a class="grow" href="sendmessage.html?id=237651">回复</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="pagetorpbox">
+<div class="sel">
+<input id="chkSelectAll" onclick="selectAll(this);" type="checkbox">
+全选
+<a class="del-all2" href="javascript:void(0);" onclick="deleteAllConfirm(0,5);">
+<img src="images/delet.gif">
+</a>
+<a class="del-all2" href="javascript:void(0);" onclick="setAllIsRead(2);">
+<img src="images/bwyd.gif">
+</a>
+</div>
+</div>
+<div class="page-box cf">
+<div id="page-container" class="pagination fl" data-eid="qd_C44" data-pagemax="524" data-page="1">
+<div class="lbf-pagination">
+<ul class="lbf-pagination-item-list">
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-prev lbf-pagination-disabled" href="javascript:;"><</a>
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-page lbf-pagination-current" data-page="1" href="javascript:;">1</a>
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-page " data-page="2" href="javascript:;">2</a>
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-page " data-page="3" href="javascript:;">3</a>
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-page " data-page="4" href="javascript:;">4</a>
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-page " data-page="5" href="javascript:;">5</a>
+</li>
+<li class="lbf-pagination-item">
+...
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-page " data-page="524" href="javascript:;">524</a>
+</li>
+<li class="lbf-pagination-item">
+<a class="lbf-pagination-next " href="javascript:;">></a>
+</li>
+</ul>
+<div class="lbf-pagination-jump">
+<input class="lbf-pagination-input" value="1" type="text">
+<a class="lbf-pagination-go" href="javascript:;">GO</a>
+</div>
+</div>
+</div>
+</div>
+
+        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.js"></script>
+<footer>
+
+</footer>
+</body>
+</html>
