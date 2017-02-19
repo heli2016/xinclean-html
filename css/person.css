@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+.person .titletop{text-align:center; font-size:18px; margin-top:30px;}
+.person table{width:100%;}
+.person table tr td{padding-top:20px;}
+.person table tr td form{display:none; padding-top:20px;}
+.infoname{width:40%; text-align:right; padding-right:20px;}
