@@ -151,7 +151,9 @@ function menuSH(){
 </td>
 <td><div class="datagrid-cell" style=";text-align:center;;height:auto;">
 <div class="datagrid-cell-text">度假胜地跨境梵蒂冈反倒是电商说度假胜地跨境电商说的 就度假胜地跨境电商说的 就度假胜地跨境电商说的 就度假胜地跨境电商说的 就的 就是打尽</div>
+<a class="smallimage" rel="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg">
 <img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
+</a>
 </div></td>
 </tr>
 <tr class="pic-height" onClick="isChecked(this)">
@@ -255,5 +257,40 @@ function menuSH(){
 <footer>
 
 </footer>
+<script>
+    $(function () {        
+        //预览图
+        var x = 22;
+        var y = 20;
+
+        $("a.smallimage").hover(function (e) {
+            $("body").append('<p id="bigimage"><img src="' + this.rel + '" alt="" /></p>');
+            $(this).find('img').stop().fadeTo('slow', 0.5);
+            widthJudge(e);
+            $("#bigimage").fadeIn('fast');
+        }, function () {
+            $(this).find('img').stop().fadeTo('slow', 1);
+            $("#bigimage").remove();
+        });
+
+        $("a.smallimage").mousemove(function (e) {
+            widthJudge(e);
+        });
+
+        function widthJudge(e) {
+            var marginRight = document.documentElement.clientWidth - e.pageX;
+            var imageWidth = $("#bigimage").width();
+            if (marginRight < imageWidth) {
+                x = imageWidth + 22;
+                $("#bigimage").css({top: (e.pageY - y ) + 'px', left: (e.pageX - x ) + 'px'});
+            } else {
+                x = 22;
+                $("#bigimage").css({top: (e.pageY - y ) + 'px', left: (e.pageX + x ) + 'px'});
+            }
+            ;
+        }
+        
+    });
+</script>
 </body>
 </html>
