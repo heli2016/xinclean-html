@@ -515,3 +515,12 @@ ul.list-box li .msg-box .msg-txt{line-height:1.5em;font-size:14px; text-indent:2
       background-color: #ffffff;
   }
 }
+@media screen and (max-width: 768px) {
+  #bigimage img {
+      background: #fff none repeat scroll 0 0;
+      border: 1px solid #e3e3e3;
+      height: 350px;
+      padding: 5px;
+      width: 350px;
+  }
+}
