@@ -162,8 +162,9 @@ function menuSH(){
 <input name="guid" value="794567" type="checkbox">
 </td>
 <td><div class="datagrid-cell datagrid-cell-c4-filePath" style=";text-align:center;;height:auto;">
+<a class="smallimage" rel="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg">
 <img id=" 795029" src="http://image.static.qiujiaoyou.net/square/photo/200/2017/2/12/ae4ccff4983946fcabb584aeb4ba25bb.jpg" style="width:150px;height:150px;">
-</div></td>
+</a></div></td>
 </tr>
 <tr class="pic-height" onClick="isChecked(this)">
 <td class="rownumber">3</td>
@@ -262,6 +263,12 @@ function menuSH(){
         //预览图
         var x = 200;
         var y = 20;
+		var obj = $('.smallimage');
+		var offset = obj.offset();  
+		 
+		 $("a.smallimage").click(function (event) {
+            event.stopPropagation();
+        });
 
         $("a.smallimage").hover(function (e) {
             $("body").append('<p id="bigimage"><img src="' + this.rel + '" alt="" /></p>');
@@ -276,18 +283,13 @@ function menuSH(){
         $("a.smallimage").mousemove(function (e) {
             widthJudge(e);
         });
+		
+
 
         function widthJudge(e) {
-            var marginRight = document.documentElement.clientWidth - e.pageX;
-            var imageWidth = $("#bigimage").width();
-            if (marginRight < imageWidth) {
-                x = imageWidth + 22;
-                $("#bigimage").css({top: (e.pageY + y ) + 'px', left: (e.pageX - x ) + 'px'});
-            } else {
-                x = 22;
-                $("#bigimage").css({top: (e.pageY + y ) + 'px', left: (e.pageX - x ) + 'px'});
-            }
-            ;
+            
+                $("#bigimage").css({top: (e.pageY + y ) + 'px', left: (  offset.left-125 ) + 'px'});
+            
         }
         
     });
