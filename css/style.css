@@ -64,7 +64,7 @@ header p a:hover{color:red}
 .datagrid-view .datagrid-cell-pic{width:90%; text-align:center;}
 .datagrid-view .datagrid-header-check{width:5%;}
 .datagrid-view .datagrid-cell-check{width:5%;}
-.datagrid-wenzi{width:60%; margin-left:20px; text-align:left; text-indent:2em;}
+.datagrid-wenzi{width:60%; margin:10px; margin-left:20px; text-align:left; text-indent:2em;}
 tr.pic-height:hover
 {
 background-color:#CCC;
